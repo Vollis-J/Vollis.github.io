@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html lang="zh">
-    <head>
+<html style="display: none;" lang="zh">
+    <head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
     <!--
         © Material Theme
         https://github.com/viosey/hexo-theme-material
-        Version: 1.3.4 -->
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!-- Title -->
     
@@ -15,56 +51,18 @@
         Two Kinds Of Mood
     </title>
 
-    <!-- Meta & Info -->
-    <meta charset="utf-8">
-
-    <!-- dns prefetch -->
-    <meta http-equiv="x-dns-prefetch-control" content="on">
-    
-    
-    
-    
-    
-        <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
-    
-    
-        <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
-    
-
-    <meta http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0097A7">
-    <meta name="author" content="vtkom">
-    <meta name="description" content="null">
-    <meta name="keywords" content="null,测试">
-
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
-    <link rel="icon" sizes="192x192" href="/img/favicon.png">
-    <link rel="apple-touch-icon" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
 
-    <!--iOS -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-title" content="Title">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="480">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" itemprop="description" content="测试MarkDown 语法">
+    <meta name="keywords" content="null,测试">
+    <meta name="theme-color" content="#0097A7">
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Two Kinds Of Mood">
-
-    <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://vtkom.github.io">
-    <meta property="og:type" content="blog">
-    <meta property="og:title" content="TestMarkdown | Two Kinds Of Mood">
-    <meta property="og:description" content="null">
-    <meta property="og:article:tag" content="测试"> 
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -74,17 +72,34 @@
         
     <![endif]-->
 
-    <!-- Import CSS & jQuery -->
-    
-        <link rel="stylesheet" href="/css/material.min.css">
-        <link rel="stylesheet" href="/css/style.min.css">
-        <!-- Config CSS -->
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
 
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
 
 <!-- Other Styles -->
 <style>
   body, html {
     font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   }
 
   a {
@@ -150,7 +165,12 @@
 
     <style>
       body{
-        background-image: url(/img/bg.png);
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
       }
     </style>
 
@@ -176,38 +196,109 @@
     </style>
 
 
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/queue.js"></script>
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
     
 
-    <!-- UC Browser Compatible -->
-    <script>
-        var agent = navigator.userAgent.toLowerCase();
-        if(agent.indexOf('ucbrowser')>0) {
-            document.write("<link rel=\"stylesheet\" href=\"/css/uc.css\">");
-            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Two Kinds Of Mood">
+    <meta name="msapplication-starturl" content="https://vtkom.github.io/2017/04/20/TestMarkdown/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Two Kinds Of Mood">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://vtkom.github.io/2017/04/20/TestMarkdown/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="TestMarkdown | Two Kinds Of Mood">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="测试MarkDown 语法">
+    <meta property="og:article:tag" content="测试"> 
+
+    
+        <meta property="article:published_time" content="Thu Apr 20 2017 21:29:44 GMT+0800">
+        <meta property="article:modified_time" content="Thu Apr 20 2017 21:58:48 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://vtkom.github.io/2017/04/20/TestMarkdown/index.html">
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://vtkom.github.io/2017/04/20/TestMarkdown/index.html",
+    "headline": "TestMarkdown",
+    "datePublished": "Thu Apr 20 2017 21:29:44 GMT+0800",
+    "dateModified": "Thu Apr 20 2017 21:58:48 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "vtkom",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "这是一个全新的开始"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Two Kinds Of Mood",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
         }
-    </script>
+    },
+    "keywords": ",测试null",
+    "description": "测试MarkDown 语法",
+}
+</script>
+
 
     
 
+    <!-- Analytics -->
     
-    <!-- Google Analytics -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-97625530-1', 'auto');ga('send', 'pageview');
-    </script>
     
-
-
-    <!-- Bing Background -->
     
 
     <!-- Custom Head -->
     
+
 <link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
 
@@ -225,7 +316,7 @@
                     
                         <!-- Hamburger Button -->
                         <button class="MD-burger-icon sidebar-toggle">
-                            <span class="MD-burger-layer"></span>
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
                         </button>
                     
 
@@ -248,21 +339,18 @@
     </div>
     -->
 
+
     <!-- Left aligned menu below button -->
-    <button id="post-toc-trigger-btn"
-        class="mdl-button mdl-js-button mdl-button--icon">
+    
+    
+    <button id="post-toc-trigger-btn" class="mdl-button mdl-js-button mdl-button--icon">
         <i class="material-icons">format_list_numbered</i>
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
         <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一级标题"><span class="post-toc-number">1.</span> <span class="post-toc-text">一级标题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二级标题"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">二级标题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三级标题"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">三级标题</span></a></li></ol></li></ol></li></ol>
-
-        <!--
-        <li class="mdl-menu__item">
-            Some Action
-        </li>
-        -->
     </ul>
+    
 
 
 
@@ -297,7 +385,7 @@
 
     <!-- Author Avatar -->
     <div id="author-avatar">
-        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar">
     </div>
     <!-- Author Name & Date -->
     <div>
@@ -317,15 +405,6 @@
 
     <!-- Qrcode -->
     
-        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">devices other</i>
-            <span class="visuallyhidden">devices other</span>
-        </button>
-        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
-            <li class="mdl-menu__item">在其它设备中阅读本文章</li>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACbElEQVR42u3aQXKDMAwF0Nz/0u22Mx3gS8aCdh6rTALYzwtbkfT5+tfXBw8PDw8PDw8P72W8T3z9vP/w1b/uPx/l/Nnq3PDw8PAmeRdb7QHvaCor4Hwpj+7Bw8PDm+Tlw/QGTn5Nlu9ibnh4eHgv4yXUPCyujouHh4f3F3nVUDt5qhqy4+Hh4b2HtxIcHyUdVu5/INeCh4eHF/N6BbCZz4/V9/Dw8PAOeOWWpmIy4rwMVr0nmiEeHh7eZl6SGsjboZIAupe2KDQr4OHh4b2Alydkk4Oh91S+rHh4eHhP8d6TaLjA4OHh4T3KuwhVi1t/Na3QW1w8PDy8ed7KNn0edldD8+QAiJoJ8PDw8EZ4eSlrR3mslxw5XFY8PDy8EV5vO66Wx5JDJQmal849PDw8vFt5SYjcK2KtB/GFowUPDw9vhNcbOH9Pvlh50wAeHh7eU7xeirYaEOcFs3K5K6nv4eHh4d3Kq27EO4LvaiNC8x8DHh4e3q28PDGxI32QL3eU5sDDw8Mb5N016aQYlqcY8mYCPDw8vBletVSfp3RvSCv0vsHDw8PbzKuGs72iVLXJoJoCxsPDw5vnrW/KeXq3xzsPx/Hw8PAmedWXVgtUKy0C1Wfx8PDwZnjVayWATtK4STvCxbh4eHh4m3krG3G1wL/ytmbrAB4eHt42Xm+Lz5O/599UD4aLEh0eHh7eIC//w59MN2876B1ON6Rx8fDw8EZ4VWqvjaBXNsPDw8P7K7zqMdA7JAoLh4eHhzfIS7bmasq1OsU8dC4fDHh4eHi38lYSAflE9wXWeHh4eJO8/3fh4eHh4eHh4eG94PoGJdN8uDnEWGoAAAAASUVORK5CYII=">
-        </ul>
-    
 
     <!-- Tags (bookmark) -->
     
@@ -336,11 +415,12 @@
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
         <a class="post_tag-link" href="/tags/测试/">测试</a>
-    </ul>
+    </li></ul>
     
 
     <!-- Share -->
-    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
     <i class="material-icons" role="presentation">share</i>
     <span class="visuallyhidden">share</span>
 </button>
@@ -348,21 +428,10 @@
     
 
     
-        
-            <!-- Busuanzi Views -->
-            <a class="post_share-link" href="#">
-                <li class="mdl-menu__item">
-                    <span id="busuanzi_container_page_pv">
-                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
-                    </span>
-                </li>
-            </a>
-        
-    
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=TestMarkdown&url=https://vtkom.github.io//2017/04/20/TestMarkdown/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=TestMarkdown&url=https://vtkom.github.io/2017/04/20/TestMarkdown/index.html&pic=https://vtkom.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -371,11 +440,29 @@
 
     <!-- Share Twitter -->
     
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=TestMarkdown&url=https://vtkom.github.io/2017/04/20/TestMarkdown/index.html&via=vtkom" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
 
     <!-- Share Facebook -->
     
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://vtkom.github.io/2017/04/20/TestMarkdown/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
 
     <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://vtkom.github.io/2017/04/20/TestMarkdown/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
     
 
     <!-- Share LinkedIn -->
@@ -383,17 +470,12 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Two Kinds Of Mood&title=TestMarkdown&summary=null&pics=https://vtkom.github.io/img/favicon.png&url=https://vtkom.github.io/2017/04/20/TestMarkdown/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 QQ
-            </li>
-        </a>
-    
 
     <!-- Share Telegram -->
     
 </ul>
 
+    
 </div>
 
                 
@@ -404,6 +486,7 @@
         <p>测试MarkDown 语法<br><a id="more"></a><br><img src="https://www.hdwallpapers.net/previews/starry-night-over-corsica-986.jpg" alt="开头"></p>
 <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>一级标题用# (注意空格) 以此类推… thumbnail: ‘/img/xingkong.jpg’ or ‘http’</p>
 
+        
     
 
     
@@ -415,37 +498,6 @@
                 <!-- Post Comments -->
                 
                     
-    <!-- 使用多说评论 -->
-    <link rel="stylesheet" href="/css/duoshuo.min.css">
-<style>
-    #ds-thread #ds-reset .ds-post-button{
-        background-color: #0097A7 !important;
-    }
-    #ds-wrapper #ds-reset .ds-icons-32{
-        background-color: #0097A7 !important;
-    }
-    #ds-reset .ds-highlight {
-        color: #0097A7 !important;
-    }
-</style>
-<div id="comments">
-    <!-- 多说评论框 start -->
-    <div class="ds-thread"
-        data-thread-key="2017/04/20/TestMarkdown/"
-        data-url="https://vtkom.github.io/2017/04/20/TestMarkdown/"
-        data-title="TestMarkdown">
-    </div>
-    <!-- 多说评论框 end -->
-</div>
-
-
-
-
-
-
-
-
-
                 
             </div>
 
@@ -453,19 +505,19 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
+        <a href="/2017/05/06/hello-world/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
-    
-        <a href="/2017/05/06/hello-world/" id="post_nav-older" class="next-content">
-            旧篇
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-        </a>
     
 </nav>
 
@@ -502,7 +554,7 @@
 
     <!-- Sidebar Email -->
     <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
-        948026981@qq.com
+        948026981@email.com
         <b class="caret"></b>
     </a>
 </div>
@@ -515,7 +567,7 @@
         <ul id="settings-dropdown" class="dropdown-menu">
             
                 <li>
-                    <a href="mailto:948026981@qq.com" target="_blank" title="Email Me">
+                    <a href="#" target="_blank" title="Email Me">
                         
                             <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
                         
@@ -529,7 +581,7 @@
     <!-- Homepage -->
     
         <li id="sidebar-first-li">
-            <a href="/" target="_self">
+            <a href="/">
                 
                     <i class="material-icons sidebar-material-icons">home</i>
                 
@@ -552,50 +604,15 @@
             <ul class="dropdown-menu">
             <li>
                 <a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">1</span></a>
-            </ul>
+            </li></ul>
         </li>
         
     
 
     <!-- Categories  -->
     
-        <li class="dropdown">
-            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
-                
-                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
-                
-                分类
-                <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-                <li>
-                <a class="sidebar_archives-link" href="/categories/语法/">语法<span class="sidebar_archives-count">1</span></a>
-            </ul>
-        </li>
-        
-    
 
     <!-- Pages  -->
-    
-        <li>
-            <a href="/gallery" title="照片">
-                
-                    <i class="material-icons sidebar-material-icons">photo</i>
-                
-                照片
-            </a>
-        </li>
-        
-    
-        <li>
-            <a href="/message" title="留言板">
-                
-                    <i class="material-icons sidebar-material-icons">question_answer</i>
-                
-                留言板
-            </a>
-        </li>
-        
     
 
     <!-- Article Number  -->
@@ -621,7 +638,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
 <!-- Theme Material -->
 
-    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+    <a href="https://github.com/viosey/hexo-theme-material" class="sidebar-footer-text-a" target="_blank">
         <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
             主题 - Material
             <span class="sidebar-badge badge-circle">i</span>
@@ -655,7 +672,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
                     
                         <!-- Footer Top Button -->
-                        <div class="toTop-wrap">
+                        <div id="back-to-top" class="toTop-wrap">
     <a href="#top" class="toTop">
         <i class="material-icons footer_top-i">expand_less</i>
     </a>
@@ -671,7 +688,7 @@ It will not impact the appearance and can give developers a lot of support :)
     <!-- Twitter -->
     
         <a href="https://twitter.com/twitter" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.svg);">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
                 <span class="visuallyhidden">Twitter</span>
             </button><!--
      --></a>
@@ -680,7 +697,7 @@ It will not impact the appearance and can give developers a lot of support :)
     <!-- Facebook -->
     
         <a href="https://www.facebook.com/facebook" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.svg);">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
                 <span class="visuallyhidden">Facebook</span>
             </button><!--
      --></a>
@@ -689,7 +706,7 @@ It will not impact the appearance and can give developers a lot of support :)
     <!-- Google + -->
     
         <a href="https://www.google.com/" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.svg);">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
                 <span class="visuallyhidden">Google Plus</span>
             </button><!--
      --></a>
@@ -718,17 +735,19 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <!-- Telegram -->
     
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
 </div>
 
 
         <!--Copyright-->
         <div id="copyright">
-            Copyright&nbsp;©&nbsp;
-            <script type="text/javascript">
-                var fd = new Date();
-                document.write(fd.getFullYear());
-            </script>
-            &nbsp;Two Kinds Of Mood
+            Copyright&nbsp;©&nbsp;<span year=""></span>&nbsp;Two Kinds Of Mood
+            
         </div>
 
         <!-- Paradox Footer Right Section -->
@@ -751,17 +770,20 @@ It will not impact the appearance and can give developers a lot of support :)
 </footer>
 
 
-                    <!-- Import File -->
+                    <!-- Import JS File -->
 
-    <script src="/js/lazyload.min.js"></script>
-    <script src="/js/js.min.js"></script>
-
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
 
 
-    <script src="/js/nprogress.js"></script>
+
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
 
 
-<script type="text/javascript">
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
     NProgress.configure({
         showSpinner: true
     });
@@ -784,37 +806,6 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-    
-        <script src="/js/smoothscroll.js"></script>
-    
-
-
-
-
-
-    <!-- Busuanzi -->
-    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-    <!-- 多说公共 js 代码 start -->
-    <script type="text/javascript">
-        queue.offer(function(){
-            var duoshuoQuery = {
-                short_name: 'vtkom'
-            };
-            (function() {
-                var ds = document.createElement('script');
-                ds.type = 'text/javascript';
-                ds.async = true;
-                ds.src = 'https://static.duoshuo.com/embed.js';
-                ds.charset = 'UTF-8';
-                (document.getElementsByTagName('head')[0]
-                 || document.getElementsByTagName('body')[0]).appendChild(ds);
-            })();
-        });
-    </script>
-    <!-- 多说公共 js 代码 end -->
 
 
 
@@ -823,25 +814,48 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-<!-- Window Load-->
+
+
+<!-- UC Browser Compatible -->
 <script>
-    $(window).load(function() {
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
         // Post_Toc parent position fixed
         $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
     });
+
+    
+    
 </script>
 
 <!-- MathJax Load-->
 
-<script>
-    <!-- Offer LazyLoad -->
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
     queue.offer(function(){
         $('.lazy').lazyload({
             effect : 'show'
         });
     });
 
-    <!-- Start Queue -->
+    // Start Queue
     $(document).ready(function(){
         setInterval(function(){
             queue.execNext();
@@ -849,9 +863,34 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 </script>
 
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
                 </main>
             </div>
-			<script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
         </body>
     
 </html>

@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html lang="zh">
-    <head>
+<html style="display: none;" lang="zh">
+    <head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
     <!--
         © Material Theme
         https://github.com/viosey/hexo-theme-material
-        Version: 1.3.4 -->
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!-- Title -->
     
@@ -15,56 +51,18 @@
         Two Kinds Of Mood
     </title>
 
-    <!-- Meta & Info -->
-    <meta charset="utf-8">
-
-    <!-- dns prefetch -->
-    <meta http-equiv="x-dns-prefetch-control" content="on">
-    
-    
-    
-    
-    
-        <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
-    
-    
-        <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
-    
-
-    <meta http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0097A7">
-    <meta name="author" content="vtkom">
-    <meta name="description" content="null">
-    <meta name="keywords" content="null">
-
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
-    <link rel="icon" sizes="192x192" href="/img/favicon.png">
-    <link rel="apple-touch-icon" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
 
-    <!--iOS -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-title" content="Title">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="480">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="null">
+    <meta name="theme-color" content="#0097A7">
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Two Kinds Of Mood">
-
-    <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://vtkom.github.io">
-    <meta property="og:type" content="blog">
-    <meta property="og:title" content="gallery | Two Kinds Of Mood">
-    <meta property="og:description" content="null">
-    
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -74,17 +72,34 @@
         
     <![endif]-->
 
-    <!-- Import CSS & jQuery -->
-    
-        <link rel="stylesheet" href="/css/material.min.css">
-        <link rel="stylesheet" href="/css/style.min.css">
-        <!-- Config CSS -->
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
 
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
 
 <!-- Other Styles -->
 <style>
   body, html {
     font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   }
 
   a {
@@ -150,7 +165,12 @@
 
     <style>
       body{
-        background-image: url(/img/bg.png);
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
       }
     </style>
 
@@ -176,38 +196,76 @@
     </style>
 
 
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/queue.js"></script>
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
     
 
-    <!-- UC Browser Compatible -->
-    <script>
-        var agent = navigator.userAgent.toLowerCase();
-        if(agent.indexOf('ucbrowser')>0) {
-            document.write("<link rel=\"stylesheet\" href=\"/css/uc.css\">");
-            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
-        }
-    </script>
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Two Kinds Of Mood">
+    <meta name="msapplication-starturl" content="https://vtkom.github.io/gallery/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Two Kinds Of Mood">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
 
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://vtkom.github.io/gallery/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="gallery | Two Kinds Of Mood">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
     
 
     
-    <!-- Google Analytics -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-97625530-1', 'auto');ga('send', 'pageview');
-    </script>
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://vtkom.github.io/gallery/index.html">
     
 
+    <!-- Structured-data for SEO -->
+    
+        
 
-    <!-- Bing Background -->
+
+
+    
+
+    <!-- Analytics -->
+    
+    
     
 
     <!-- Custom Head -->
     
+
 <link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
 
@@ -242,127 +300,127 @@
             
                 
                     <article class="thumb">
-                        <a href="/img/xingkong.jpg" class="image lazy" data-original="/img/xingkong.jpg"><img class="lazy" data-original="/img/xingkong.jpg" alt="星空" /></a>
+                        <a href="/img/xingkong.jpg" class="image lazy" data-original="/img/xingkong.jpg"><img class="lazy" data-original="/img/xingkong.jpg" alt="星空"></a>
                         <h2>星空</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg" alt="lightgallery1" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg" alt="lightgallery1"></a>
                         <h2>lightgallery1</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg" alt="lightgallery2" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg" alt="lightgallery2"></a>
                         <h2>lightgallery2</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/3.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-3.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-3.jpg" alt="lightgallery3" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/3.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-3.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-3.jpg" alt="lightgallery3"></a>
                         <h2>lightgallery3</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/4.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-4.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-4.jpg" alt="lightgallery4" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/4.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-4.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-4.jpg" alt="lightgallery4"></a>
                         <h2>lightgallery4</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/5.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-5.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-5.jpg" alt="lightgallery5" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/5.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-5.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-5.jpg" alt="lightgallery5"></a>
                         <h2>lightgallery5</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/6.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-6.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-6.jpg" alt="lightgallery6" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/6.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-6.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-6.jpg" alt="lightgallery6"></a>
                         <h2>lightgallery6</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/7.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-7.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-7.jpg" alt="lightgallery7" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/7.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-7.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-7.jpg" alt="lightgallery7"></a>
                         <h2>lightgallery7</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/8.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-8.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-8.jpg" alt="lightgallery8" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/8.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-8.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-8.jpg" alt="lightgallery8"></a>
                         <h2>lightgallery8</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/9.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-19.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-19.jpg" alt="lightgallery9" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/9.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-19.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-19.jpg" alt="lightgallery9"></a>
                         <h2>lightgallery9</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/10.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-10.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-10.jpg" alt="lightgallery10" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/10.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-10.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-10.jpg" alt="lightgallery10"></a>
                         <h2>lightgallery10</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/11.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-11.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-11.jpg" alt="lightgallery11" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/11.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-11.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-11.jpg" alt="lightgallery11"></a>
                         <h2>lightgallery11</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/12.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-12.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-12.jpg" alt="lightgallery12" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/12.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-12.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-12.jpg" alt="lightgallery12"></a>
                         <h2>lightgallery12</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/13.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-13.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-13.jpg" alt="lightgallery13" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/13.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-13.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-13.jpg" alt="lightgallery13"></a>
                         <h2>lightgallery13</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/14.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-14.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-14.jpg" alt="lightgallery14" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/14.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-14.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-14.jpg" alt="lightgallery14"></a>
                         <h2>lightgallery14</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/15.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-15.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-15.jpg" alt="lightgallery15" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/15.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-15.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-15.jpg" alt="lightgallery15"></a>
                         <h2>lightgallery15</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/16.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-16.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-16.jpg" alt="lightgallery16" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/16.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-16.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-16.jpg" alt="lightgallery16"></a>
                         <h2>lightgallery16</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/17.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-17.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-17.jpg" alt="lightgallery17" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/17.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-17.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-17.jpg" alt="lightgallery17"></a>
                         <h2>lightgallery17</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/18.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-18.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-18.jpg" alt="lightgallery18" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/18.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-18.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-18.jpg" alt="lightgallery18"></a>
                         <h2>lightgallery18</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/19.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-19.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-19.jpg" alt="lightgallery19" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/19.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-19.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-19.jpg" alt="lightgallery19"></a>
                         <h2>lightgallery19</h2>
                         <p>这是</p>
                     </article>
                 
                     <article class="thumb">
-                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/20.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-20.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-20.jpg" alt="lightgallery20" /></a>
+                        <a href="https://sachinchoolur.github.io/lightgallery.js/static/img/20.jpg" class="image lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-20.jpg"><img class="lazy" data-original="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-20.jpg" alt="lightgallery20"></a>
                         <h2>lightgallery20</h2>
                         <p>这是</p>
                     </article>
@@ -370,70 +428,32 @@
             
         </div>
         <!-- Footer -->
-        <!--
-        <footer id="footer" class="panel">
-          <div class="inner split">
-            <div>
-              <section>
-                <h2>Magna feugiat sed adipiscing</h2>
-                <p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
-              </section>
-              <section>
-                <h2>Follow me on ...</h2>
-                <ul class="icons">
-                  <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                  <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                  <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                  <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-                  <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-                  <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                  <li><a href="#" class="icon fa-telegram"><span class="label">Telegram</span></a></li>
-                </ul>
-              </section>
-              <p class="copyright">
-                &copy; Design: <a href="#">Gallery</a>.
-              </p>
-            </div>
-            <div>
-              <section>
-                <h2>Get in touch</h2>
-                <form method="post" action="#">
-                  <div class="field half first">
-                    <input type="text" name="name" id="name" placeholder="Name" />
-                  </div>
-                  <div class="field half">
-                    <input type="text" name="email" id="email" placeholder="Email" />
-                  </div>
-                  <div class="field">
-                    <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
-                  </div>
-                  <ul class="actions">
-                    <li><input type="submit" value="Send" class="special" /></li>
-                    <li><input type="reset" value="Reset" /></li>
-                  </ul>
-                </form>
-              </section>
-            </div>
-          </div>
-        </footer>
-        -->
+        
 
     </div>
 
     <!-- Scripts -->
     
-        <script src="/js/jquery.min.js"></script>
         <script src="/js/gallery/gallery.js"></script>
-        <script src="/js/lazyload.min.js"></script>
     
 
-    <script type="text/javascript">
+    
+        <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+    
+
+    <script>
         queue.offer(function(){
             $('.lazy').lazyload({
               effect: 'fadeIn',
               event: 'scrollstop'
             });
         })
+        <!-- Start Queue -->
+        $(document).ready(function(){
+            setInterval(function(){
+                queue.execNext();
+            },200);
+        });
     </script>
 </body>
 
